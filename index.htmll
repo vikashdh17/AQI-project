@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Air and Water Quality Monitoring</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="aqi.html">Air Quality Index</a></li>
+                <li><a href="wqi.html">Water Quality Index</a></li>
+                <li><a href="monitoring.html">Monitoring</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <main>
+            <section>
+                <h2>About Us</h2>
+                <p>Welcome to Air and Water Quality Monitoring, your trusted source for information on environmental quality. We are passionate about promoting clean air and water and believe that awareness and education are key to achieving a healthier planet.</p>
+                <p>Our mission is to provide you with accurate and up-to-date information on air quality, water quality, and environmental monitoring. We aim to empower individuals and communities to make informed decisions that contribute to a sustainable and clean environment.</p>
+            </section>
+        
+            <section>
+                <h2>Air Quality Index (AQI)</h2>
+                <p>The Air Quality Index (AQI) is a valuable tool for understanding the quality of the air you breathe. It measures various pollutants in the atmosphere and provides a numerical value that indicates the overall air quality. Learn more about AQI, how it's calculated, and how to interpret the data to protect your health.</p>
+                <a href="aqi.html">Learn More about AQI &raquo;</a>
+            </section>
+        
+            <section>
+                <h2>Water Quality Index (WQI)</h2>
+                <p>Water quality is crucial for both human health and the environment. The Water Quality Index (WQI) assesses the condition of water bodies based on various parameters. Explore our resources to understand WQI, its significance, and how it impacts your community.</p>
+                <a href="wqi.html">Learn More about WQI &raquo;</a>
+            </section>
+        
+            <section>
+                <h2>Monitoring and Measurement</h2>
+                <p>Discover the methods and technologies used for environmental monitoring. From air quality sensors to water quality testing, we delve into the tools and techniques that help us keep our environment clean and safe. Explore the latest innovations in environmental monitoring.</p>
+                <a href="monitoring.html">Explore Monitoring Methods &raquo;</a>
+            </section>
+        </main>
+        
+    </main>
+    <section>
+        <h2>Our Environmental Monitoring Equipment</h2>
+        <img src="monitoring-equipment.jpg" alt="Environmental Monitoring Equipment">
+        <p>Here's a glimpse of the advanced equipment we use to monitor air and water quality.</p>
+    </section>
+    <section>
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section>
+        <h2>Environmental Data Map</h2>
+        <iframe
+            src="https://www.aqi.in/"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+        ></iframe>
+    </section>
+    <section>
+        <h2>Connect with Us</h2>
+        <div class="social-icons">
+            <a href="#" class="icon facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="icon twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="icon linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="icon instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+    </section>
+    <header class="head">
+        <h1>Crop Suitability Calculator</h1>
+    </header>
+    <main class="mn">
+        <section class="input-section">
+            <h2>Input AQI and WQI Values</h2>
+            <form id="calculator-form">
+                <label for="aqi">Air Quality Index (AQI):</label>
+                <input type="number" id="aqi" required>
+                <label for="wqi">Water Quality Index (WQI):</label>
+                <input type="number" id="wqi" required>
+                <button type="submit">Calculate</button>
+            </form>
+        </section>
+        <section class="result-section" id="result">
+            <h2>Crop Suitability Recommendations</h2>
+            <p id="crop-recommendation"></p>
+        </section>
+    </main>
+    
+    
+    
+    
+
+    <footer>
+        <p>&copy; 2023 Air and Water Quality Monitoring</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
